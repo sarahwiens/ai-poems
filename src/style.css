@@ -1,0 +1,26 @@
+body {
+  background-color: #d7fadb;
+}
+.container {
+  text-align: center;
+  margin: 30px auto;
+}
+
+h1 {
+  color: #384473;
+}
+
+.poem-container {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: rgba(0, 0, 0, 0.8);
+  max-width: fit-content;
+  margin: 20px auto;
+  padding: 15px 20px;
+  border-radius: 8px;
+  line-height: 2;
+  text-align: left;
+}
+
+footer {
+  color: rgba(52, 72, 115, 0.8);
+}
