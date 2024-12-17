@@ -12,7 +12,18 @@ h1 {
   font-family: "Open Sans", serif;
   font-weight: 400px;
 }
+.search-input {
+  padding: 15px 20px;
+  border-radius: 8px;
+}
 
+.submit-button {
+  padding: 15px 20px;
+  background-color: #50c56f;
+  /* background-color:#55855e; */
+  color: #384473;
+  border-radius: 8px;
+}
 .poem-container {
   background-color: rgba(255, 255, 255, 0.6);
   color: rgba(0, 0, 0, 0.8);
