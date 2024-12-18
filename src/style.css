@@ -1,5 +1,5 @@
 body {
-  background-color: #d7fadb;
+  background-color: rgba(230, 240, 220, 0.6);
 }
 
 .container {
@@ -7,30 +7,47 @@ body {
   margin: 50px auto;
 }
 
-h1 {
-  color: #384473;
+h1,
+a {
+  color: #55883b;
   font-family: "Open Sans", serif;
-  font-weight: 400px;
+  font-weight: 600;
+  text-decoration: none;
 }
+
 .search-input {
   padding: 15px 20px;
-  border-radius: 8px;
+  border-radius: 30px;
+  border: none;
+  width: 250px;
+  box-shadow: 1px 2px 1px 0px rgba(85, 136, 59, 0.65);
+  font-size: 16px;
 }
 
 .submit-button {
   padding: 15px 20px;
-  background-color: #50c56f;
-  /* background-color:#55855e; */
-  color: #384473;
-  border-radius: 8px;
+  background-color: rgba(154, 103, 53, 0.8);
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: 2px 3px 2px 0px rgba(85, 136, 59, 0.65);
 }
+.submit-button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 200ms;
+  background-color: rgba(154, 103, 53, 0.6);
+}
+
 .poem-container {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(193, 232, 153, 0.6);
+  box-shadow: 1px 2px 1px 0px rgba(85, 136, 59, 0.65);
   color: rgba(0, 0, 0, 0.8);
-  max-width: fit-content;
+  max-width: 400px;
   margin: 20px auto;
   padding: 15px 20px;
-  border-radius: 8px;
+  border-radius: 30px;
   line-height: 2;
   text-align: left;
   font-family: "Indie Flower", cursive;
@@ -38,6 +55,6 @@ h1 {
 }
 
 footer {
-  color: rgba(52, 72, 115, 0.8);
+  color: rgba(85, 136, 59, 0.8);
   font-family: "Open Sans", serif;
 }
