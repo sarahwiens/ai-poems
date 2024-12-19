@@ -2,6 +2,8 @@ function displayLimerick(response) {
   new Typewriter("#poem-output-container", {
     strings: `${response.data.answer}`,
     autoStart: true,
+    delay: 50,
+    cursor: "",
   });
 }
 
