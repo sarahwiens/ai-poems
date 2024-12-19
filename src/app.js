@@ -1,4 +1,5 @@
 function displayLimerick(response) {
+  //Takes the poem returned by the ai and displays it using the typewriterjs plugin animation
   new Typewriter("#poem-output-container", {
     strings: `${response.data.answer}`,
     autoStart: true,
@@ -8,6 +9,7 @@ function displayLimerick(response) {
 }
 
 function generatePoem(event) {
+  //Once the topic is submitted by the user, the page is prevented from refreshing and the submitted topic is used as the prompt in the AI API for the AI poem generation.
   event.preventDefault();
   let topicInput = document.querySelector("#poem-topic-input");
   let apiKey = "7f314bd46t448eb65o54002ab9dadc03";
@@ -18,5 +20,6 @@ function generatePoem(event) {
   axios.get(apiURL).then(displayLimerick);
 }
 
+//Once the user submits a topic for the poem, the AI poem generator is triggered.
 let poemTopicFormElement = document.querySelector("#generate-poem");
 poemTopicFormElement.addEventListener("submit", generatePoem);
