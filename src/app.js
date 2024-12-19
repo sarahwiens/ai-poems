@@ -1,6 +1,8 @@
 function displayLimerick(response) {
-  let poemElement = document.querySelector("#poem-output-container");
-  poemElement.innerHTML = response.data.answer;
+  new Typewriter("#poem-output-container", {
+    strings: `${response.data.answer}`,
+    autoStart: true,
+  });
 }
 
 function generatePoem(event) {
