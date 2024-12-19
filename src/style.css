@@ -64,6 +64,10 @@ form {
   margin-top: 12px;
 }
 
+.poem-text-container strong {
+  color: rgba(154, 103, 53, 0.8);
+}
+
 footer {
   color: rgba(85, 136, 59, 0.8);
   font-family: "Open Sans", serif;
