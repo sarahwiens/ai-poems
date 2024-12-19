@@ -55,9 +55,31 @@ form {
   padding: 20px 30px;
   border-radius: 20px;
   line-height: 2;
-  text-align: left;
   font-family: "Indie Flower", cursive;
   font-size: 20px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  text-align: center;
+  display: inline-block;
+  animation-name: spin;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.poem-topic-input-hint {
+  margin-top: 12px;
+  text-align: left;
 }
 
 .poem-text-container {
@@ -66,6 +88,10 @@ form {
 
 .poem-text-container strong {
   color: rgba(154, 103, 53, 0.8);
+}
+
+.hidden {
+  display: none;
 }
 
 footer {

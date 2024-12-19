@@ -1,5 +1,9 @@
 function displayLimerick(response) {
   //Takes the poem returned by the ai and displays it using the typewriterjs plugin animation
+  let poemOutputContainerElement = document.querySelector(
+    "#poem-output-container"
+  );
+  poemOutputContainerElement.classList.remove("hidden");
   new Typewriter("#poem-output-container", {
     strings: `${response.data.answer}`,
     autoStart: true,
