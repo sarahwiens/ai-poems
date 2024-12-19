@@ -78,8 +78,10 @@ form {
   }
 }
 .poem-topic-input-hint {
-  margin-top: 12px;
   text-align: left;
+  color: rgba(154, 103, 53, 0.8);
+  font-family: "Open Sans", serif;
+  font-size: 13px;
 }
 
 .poem-text-container {
